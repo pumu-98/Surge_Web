@@ -1,0 +1,11 @@
+version: '3'
+services:
+  server:
+    container_name: app
+    build: .
+    command: npm run dev
+    dockerfile: Dockerfile
+     
+    ports:
+      - 80:5000
+    
